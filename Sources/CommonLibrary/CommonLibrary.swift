@@ -3,4 +3,8 @@ public struct CommonLibrary {
 
     public init() {
     }
+  
+  public func printHello() {
+      print ("Hello from CommonLibrary")
+  }
 }
