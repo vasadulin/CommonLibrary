@@ -12,18 +12,18 @@ import MyLocalUILibrary
 
 public class FirstViewController: UIViewController {
 
-  override func viewDidLoad() {
+  public override func viewDidLoad() {
     super.viewDidLoad()
 
   }
 
-  @IBAction func openButtonAction(_ sender: Any) {
+  @IBAction public func openButtonAction(_ sender: Any) {
     //Open ViewController from REMOTE library MyUILibrary
     let vc = MainViewController.viewControllerFromStoryboard
     self.present(vc, animated: true, completion: nil)
   }
   
-  @IBAction func openLocalButtonAction(_ sender: Any) {
+  @IBAction public func openLocalButtonAction(_ sender: Any) {
     //Open ViewController from LOCAL library MyUILibrary
     let vc = LocalViewController.viewControllerFromStoryboard
     self.present(vc, animated: true, completion: nil)
