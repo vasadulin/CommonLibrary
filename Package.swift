@@ -26,6 +26,10 @@ let package = Package(
             name: "CommonLibrary",
             dependencies: ["MyLocalUILibrary",
                            "MyUILibraty"
-            ]),
+            ],
+            resources: [
+              .process("Resources"),
+            ]
+        )
     ]
 )
