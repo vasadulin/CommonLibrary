@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-      .package(url: "../MyLocalUILibrary", from: "1.0.0"),
+      .package(path: "../MyLocalUILibrary"),
       .package(url: "https://github.com/vasadulin/MyUILibraty.git", from: "1.0.0")
     ],
     targets: [
@@ -25,7 +25,7 @@ let package = Package(
         .target(
             name: "CommonLibrary",
             dependencies: ["MyLocalUILibrary",
-                           "MyUILibraty"
+                           "MyUILibraty",
             ],
             resources: [
               .process("Resources"),
